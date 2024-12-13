@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Effect</title>
+    <style>
+        body {
+            background: #191970;
+            background-image: url(assets/elves.jpeg) no-repeat center center fixed;;
+            background-size: cover;
+            margin: 0;
+            overflow: hidden;
+        }
+        .snowflake {
+            position: absolute;
+            top: 0;
+            border-radius: 50%;
+            background: whitesmoke;
+            animation: snowEffect 10s ease-in-out infinite;
+        }
+        @keyframes snowEffect {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+            25% {
+                transform: translateY(50vh) translateX(20px);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(50vh) translateX(20px);
+                opacity: ;
+            }
+            75% {
+                transform: translateY(50vh) translateX(20px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(-20px);
+                opacity: 0;
+            }
+        }
+        img {
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="assets\elves.jpeg" alt="elves sitting in the snow">
+    <!-- CHECK THIS-->
+    <audio controls autoplay>
+        <source src="christmas-music-jingle-bell-joy-251737.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        $(document).ready(function () {
+            // Snowflake generation logic
+            for (let i = 0; i < 100; i++) {
+                let size = Math.floor(Math.random() * 10) + 5 + 'px'; // Random size between 5px and 15px
+                let leftPosition = Math.random() * 100 + '%'; // Random left position across the screen
+                let animationDuration = Math.random() * 5 + 5 + 's'; // Random duration between 5s and 10s
+
+                let snowflake = $('<div/>').addClass('snowflake').css({
+                    width: size,
+                    height: size,
+                    left: leftPosition,
+                    animationDuration: animationDuration, // Vary the falling speed
+                });
+
+                $('body').append(snowflake);
+            }
+
+            // Play audio after user interaction
+            const audio = document.getElementById('background-audio');
+            document.addEventListener('click', function () {
+                audio.play();
+            });
+        });
+    </script>
+</body>
+</html>
