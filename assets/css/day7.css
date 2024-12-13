@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+#title {
+    height: 100px;
+    width: 400px;
+}
+
+#board {
+    height: 420px;
+    width: 420px;
+    border: 10px solid lightgreen;
+    background-color: lightcyan;
+    margin: 0 auto;
+}
+
+#board img {
+    height: 140px;
+    width: 140px;
+    border:1px solid black;
+}
