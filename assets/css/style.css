@@ -1,16 +1,14 @@
 
 
 /* ---------- DAY NINE ---------- */
-
 /* ---------- piano ---------- */
 
 .piano-container {
-    /* padding: 1rem; */
-    margin-top: 3rem;
+    margin: 3rem;
     box-sizing: border-box;
     display: flex;
     position: relative;
-    max-width: 1200px;
+    max-width: 450px;
   }
   
   .white-keys-container {
@@ -22,7 +20,7 @@
     display: flex;
     position: absolute;
     width: 100%;
-    left: 2%;
+    left: 4%;
   }
   
   .key {
@@ -66,11 +64,6 @@
     min-width: 300px;
   }
   
-  /* to display the keyboard only partially on small screens */
-  .mobile-none {
-    display: flex;
-  }
-  
   .white-key {
     border: 3px solid #010425;
     background-color: #fff;
@@ -100,7 +93,6 @@
     margin: 0 10px;
   }
   
-  
   .piano-quiz {
     margin: 0 20% 0 20%;
     font-weight: 400;
@@ -111,5 +103,3 @@
     align-items: center;
     font-size: large;
   }
-
-  /* ---------- DAY TEN ---------- */
