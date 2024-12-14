@@ -1,3 +1,5 @@
+
+
 body {
   background-image: url("https://res.cloudinary.com/diuh4hxhw/image/upload/v1734187312/piano2_o2vwve.jpg");
   background-position: center;
@@ -5,13 +7,30 @@ body {
   background-size: cover;
   position: relative;
   height: 100vh;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
+
+a.homebutton {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+  }
 
 #dayninehead{
   color: white;
   text-shadow: 5px 5px 7px #000000;
   text-align: center;
   margin-top: 5%;
+  font-size: 50px;
 }
 
 
@@ -74,15 +93,15 @@ body {
   display: flex;
   margin-left: 6%;
   margin-top: 2%;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .piano-answers,
 #tunes-2.dropdown {
   margin-left: 6%;
   margin-top: 1%;
-  font-size: 20px;
-  min-width: 200px;
+  font-size: 23px;
+  min-width: 337px;
 }
 
 /* to display the keyboard only partially on small screens */
