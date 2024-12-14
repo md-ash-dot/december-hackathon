@@ -1,0 +1,298 @@
+
+
+body {
+  background-image: url("https://res.cloudinary.com/diuh4hxhw/image/upload/v1734187312/piano2_o2vwve.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+a.homebutton {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+#dayninehead{
+  color: white;
+  text-shadow: 5px 5px 7px #000000;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 50px;
+}
+
+
+/* ---------- DAY NINE ---------- */
+/* ---------- piano ---------- */
+
+.piano-container {
+  margin-top: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  max-width: 1200px;
+}
+
+.white-keys-container {
+  display: flex;
+  width: 100%;
+}
+
+.black-keys-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 2%;
+}
+
+.key {
+  flex-basis: 25rem;
+  height: 15rem;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 2px 2px 10px 0px #ccc;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* questions*/
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  background-color: rgba(250,250,250,0.85);
+}
+
+#tunes, #tunes-2 {
+  background-color: rgba(250,250,250,0.85);
+}
+
+.piano-questions,
+#tunes {
+  display: flex;
+  margin-left: 6%;
+  margin-top: 2%;
+  font-size: 23px;
+}
+
+.piano-answers,
+#tunes-2.dropdown {
+  margin-left: 6%;
+  margin-top: 1%;
+  font-size: 23px;
+  min-width: 337px;
+}
+
+/* to display the keyboard only partially on small screens */
+.mobile-none {
+  display: flex;
+}
+
+.white-key {
+  border: 3px solid #010425;
+  background-color: #fff;
+  transition: 0, 2s all;
+}
+
+.empty-key {
+  background: rgb(0, 0, 0, 0);
+  z-index: -10;
+  height: 10rem;
+  top: 20px;
+  transition: 0.2s all;
+  margin: 0 10px;
+  box-shadow: 0px 0px 0px 0px #ccc;
+}
+.black-key {
+  background: rgb(36, 32, 30);
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgba(79, 82, 71, 1) 86%
+  );
+  height: 10rem;
+  top: 20px;
+  transition: 0.2s all;
+  margin: 0 10px;
+}
+
+
+.piano-quiz {
+  margin: 0 20% 0 20%;
+  font-weight: 400;
+  padding: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+
+/* media queries  */
+@media (max-width: 992px) {
+  /* to display the keyboard only partially on small screens */
+  .mobile-none {
+    display: none;
+  }
+}
+
+/* media queries  */
+@media (max-width: 768px) {
+  /* only very small screens only display one octave */
+  .small-mobile-none {
+    display: none;
+  }
+
+  .black-keys-container,
+  .white-keys-container {
+    padding-left: 10px;
+  }
+}
+
+/* ---------- DAY TWELVE ---------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+ }
+ 
+ /*Opening modal screen*/
+ 
+ .modal {
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgb(225, 224, 231);
+     background-image: url("../images/colourchem.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ .modal-content {
+     background-color: rgb(225, 224, 231);
+     margin: 15% auto;
+     padding: 10px;
+     border: 1px solid #888;
+     width: 70%;
+     text-align: center;
+ }
+ 
+ .close {
+     color: #aaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ /*Main game*/
+ 
+ .container {
+ display: flex;
+ max-width: 80%;
+ max-height: 50%;
+ background-color: rgba(225, 224, 231, 0.9);
+ border-radius: 5px;
+ padding: 10px;
+ justify-content: center;
+ flex-direction: column;
+ margin: auto;
+ text-align: center;
+ }
+ 
+ .btn-grid {
+     display: grid;
+     grid-template-columns: repeat(1, auto);
+     gap: 10px;
+     margin: 20px 0;
+ }
+ 
+ .btn {
+     border-radius: 5px;
+     padding: 5px 10px;
+     outline: none;
+ }
+ 
+ .btn:hover {
+     border-color: royalblue;
+ }
+ 
+ .btn.correct {
+     background-color: rgb(2, 204, 92);
+ }
+ 
+ .btn.wrong {
+     background-color: red;
+ }
+ 
+ .start-btn {
+     font-size: 3rem;
+     font-weight: bold;
+     padding: 10px 20px;
+ }
+ 
+ .controls {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .hide {
+     display: none;
+ }
+ 
+ /*Media query: (700px and above) */
+ 
+ @media screen and (min-width: 700px) {
+ .container {
+         width: 800px;
+         max-width: 70%;
+     }
+ 
+     .modal-content {
+         padding: 20px;
+         width: 30%;
+     }
+ 
+     .btn-grid {
+         display: grid;
+         grid-template-columns: repeat(2, auto);
+     }
+ }

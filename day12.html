@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="assets/css/day12.css">
+
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+    <title>Day 12 - Christmas Quiz!</title>
+
+</head>
+
+<body>
+    <!--Header-->
+    
+    <header id="maintitle">
+        <a href="index.html" class="homebutton">Home</a><h1>Day 12 - Christmas Quiz!</h1>  
+    </header>
+
+    <!--Main Content-->
+    <main>
+
+    <!--Opening modal screen-->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>On the 12th Day of Code-mas... the hackathon gave to me... a quiz! </h2>
+            We hope you have enjoyed the Hackathon entry of team Baby It's Code Outside and that you have had a wonderful holiday season.
+        </div>
+    </div>
+    
+     <!--Main quiz area-->
+
+    <div class="container hide" id="question-container">
+            <div>
+                <span id="questionno"></span>/10
+            </div>
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer One</button>
+                <button class="btn">Answer Two</button>
+                <button class="btn">Answer Three</button>
+                <button class="btn">Answer Four</button>
+            </div>
+            <div class="controls">
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+    </div>
+        <button id="start-btn" class="start-btn btn">Start Quiz!</button>
+
+     <!--End screen area-->
+
+     <div class="container hide" id="end-screen">
+        
+            <div>
+                <p>You achieved <span id="final-score"></span>/10 which is <span id="final-percentage"></span>%!</p>
+                <p>Merry Christmas-time!</p>
+                <button id="restart-btn" class="restart-btn btn">Restart quiz?</button>
+                <button id="btn" class="btn"><a href="index.html" style="text-decoration: none;">Home</a></button>
+            </div>
+
+
+     </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+    </footer>
+
+    <!--JavaScript file-->
+    <script src="assets/javascript/script.js"></script>
+
+</body>
+</html>
