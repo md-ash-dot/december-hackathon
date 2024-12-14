@@ -8,6 +8,7 @@ var turns = 0; // variable for counting turns
 
 //var imageOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]; solved order
 var imageOrder = ["6", "9", "4", "8", "2", "1", "5", "3", "7"]; // unsolved order
+var solvedOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]; // solved order
 
 window.onload = function() {
     createBoard();
@@ -17,6 +18,8 @@ window.onload = function() {
 function createBoard() {
     document.getElementById("board").innerHTML = ""; // Clear board
     imageOrder = ["6", "9", "4", "8", "2", "1", "5", "3", "7"]; // Reset image order
+    // Hide message when starting new game
+    document.getElementById("message").style.display = "none";
     
     for (let r=0; r<rows; r++) {
         for (let c=0; c<columns; c++) {
@@ -35,8 +38,33 @@ function createBoard() {
 
             document.getElementById("board").append(tile);
 
-        }
     }
+}
+}
+
+function checkWin() {
+    let tiles = document.getElementById("board").getElementsByTagName("img");
+    let currentOrder = [];
+    
+    // Get current tile arrangement
+    for (let tile of tiles) {
+        let fileName = tile.src.split("/").pop(); // Get filename from path
+        let number = fileName.split(".")[0]; // Get number from filename
+        currentOrder.push(number);
+    }
+    
+    // Compare with solved order
+    return currentOrder.join(",") === solvedOrder.join(",");
+}
+
+function showWinMessage() {
+    document.getElementById("finalMoves").textContent = turns;
+    document.getElementById("message").style.display = "block";
+    
+    // Hide message after 30 seconds
+    setTimeout(() => {
+        document.getElementById("message").style.display = "none";
+    }, 30000);
 }
 
 function restartGame() {
@@ -95,5 +123,10 @@ function dragEnd() {
 
         turns += 1;
         document.getElementById("turns").innerText = turns;
+        
+        // Check if puzzle is solved after each move
+        if (checkWin()) {
+            showWinMessage();
+        }
     }
 }
