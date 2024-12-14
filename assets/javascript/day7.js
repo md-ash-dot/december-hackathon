@@ -49,6 +49,9 @@ function dragDrop() {
 }
 
 function dragEnd() {
+    if (!targetTile.src.includes("7.jpg")) {
+        return;
+    } // check if the tiles can only be moved into the white tile.
 
     let currentCoords = currentTile.id.split("-");
     let r = parseInt(currentCoords[0]); // row of current tile
