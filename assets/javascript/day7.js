@@ -4,6 +4,8 @@ var columns = 3;
 var currentTile; // clicked tile
 var targetTile; // white tile
 
+var turns = 0; // variable for counting turns
+
 var imageOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 window.onload = function() {
@@ -75,5 +77,8 @@ function dragEnd() {
 
         currentTile.src = targetImage;
         targetTile.src = currentImage;
+
+        turns += 1;
+        document.getElementById("turns").innerText = turns;
     }
 }
