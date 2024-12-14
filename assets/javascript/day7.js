@@ -10,6 +10,14 @@ var turns = 0; // variable for counting turns
 var imageOrder = ["6", "9", "4", "8", "2", "1", "5", "3", "7"]; // unsolved order
 
 window.onload = function() {
+    createBoard();
+    document.getElementById("restartButton").addEventListener("click", restartGame);
+}
+
+function createBoard() {
+    document.getElementById("board").innerHTML = ""; // Clear board
+    imageOrder = ["6", "9", "4", "8", "2", "1", "5", "3", "7"]; // Reset image order
+    
     for (let r=0; r<rows; r++) {
         for (let c=0; c<columns; c++) {
 
@@ -29,6 +37,12 @@ window.onload = function() {
 
         }
     }
+}
+
+function restartGame() {
+    turns = 0; // Reset turns counter
+    document.getElementById("turns").innerText = turns;
+    createBoard(); // Reset the board
 }
 
 function dragStart() {
@@ -64,7 +78,7 @@ function dragEnd() {
     let r1 = parseInt(targetCoords[0]); // row of target tile
     let c1 = parseInt(targetCoords[1]); // column of target tile
 
-    let moveRight = r == r1 && c1 == c+1; // adjacent to right 
+    let moveRight = r == r1 && c1 == c+1; // adjacent to right
     let moveLeft = r == r1 && c1 == c-1; // adjacent to left
 
     let moveUp = c == c1 && r1 == r-1; // adjacent to above
