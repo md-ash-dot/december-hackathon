@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snowman</title>
+</head>
+<body>
+    <div class="img-box"><img src="assets\image\snowman.jpeg" alt="snowman"></div>
+    <!-- addimage -->
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        background: url("assets/image/snowman.jpeg") no-repeat center center;
+        background-size: cover;
+        animation: animate 3s linear infinite;
+      
+
+    }
+
+    @keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg); /* Change color at the halfway point */
+    }
+    100% {
+        filter: hue-rotate(360deg); /* Return to the original color */
+    }
+}
+    .img-box {
+        width: 700px;
+        height: 700px;
+
+    }
+    .img-box img {
+        width: 100%;
+        height: 100%;
+
+    }
+</style>
+</html>
+<!-- color changing snowman for a spare day if needed, img generated using ai -->

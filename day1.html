@@ -18,21 +18,22 @@
       style="enable-background: new 0 0 125.8 180"
       xml:space="preserve"
     >
+    <!-- Tree it self -->
       <style type="text/css">
         .st0 {
-          fill: #332c28;
+          fill: #805c48;
         }
         .st1 {
-          fill: #078266;
+          fill: #11be59;
         }
         .st2 {
-          fill: #005f44;
+          fill: #0a912c;
         }
         .st3 {
-          fill: #d9e75c;
+          fill: #d9e94c;
         }
         .st4 {
-          fill: #bac42a;
+          fill: #e2c339;
         }
       </style>
 
@@ -49,6 +50,27 @@
                         "
           />
         </g>
+        <!-- Add decorative chains -->
+    <g id="chains">
+      <path
+        class="chain2"
+        d="M20 120 Q80.5 100, 100 80"
+      />
+      <path
+        class="chain"
+        d="M60 20 Q0.6 150, 100 50"
+      />
+      <path
+        class="chain2"
+        d="M10 140 Q62.5 120, 115 140"
+      />
+      <path
+        class="chain"
+        d="M5 160 Q62.5 140, 120 160"
+      />
+      
+    </g>
+    <!-- Add decorative baubles -->
         <g id="lights">
           <g id="blue-lt">
             <circle class="blue-lt g1" cx="70.2" cy="134.7" r="3.7" />
@@ -91,5 +113,16 @@
         />
       </g>
     </svg>
+    <!-- add audio when click on image music plays -->
+     <audio autoplay>
+        <source src="assets/music/deck-the-halls-271319.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+     document.addEventListener('click', function() {
+        const audio = document.querySelector('audio');
+        audio.play();
+    });
+    </script>
   </body>
 </html>
