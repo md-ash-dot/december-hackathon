@@ -7,8 +7,11 @@
     <style>
         body {
             background: #191970;
-            background-image: url(assets\image\elves.jpeg) no-repeat center center fixed;;
-            background-size: cover;
+            background-image: url("assets/image/elves.jpeg");
+           background-repeat: no-repeat;
+           background-position: center center;
+           background-size: cover;
+           background-attachment: fixed;
             margin: 0;
             overflow: hidden;
         }
@@ -36,10 +39,10 @@
     </style>
 </head>
 <body>
-    <img src="assets\image\elves.jpeg" alt="elves sitting in the snow" style="width:500px; height:600px">
+  
     <!-- CHECK THIS-->
-    <audio controls autoplay>
-        <source src="christmas-music-jingle-bell-joy-251737.mp3" type="audio/mpeg">
+    <audio autoplay>
+        <source src="assets/music/christmas-music-jingle-bell-joy-251737.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -62,12 +65,13 @@
                 $('body').append(snowflake);
             }
 
-            // Play audio after user interaction
-            const audio = document.getElementById('background-audio');
-            document.addEventListener('click', function () {
-                audio.play();
-            });
+           
         });
+        
+        document.addEventListener('click', function() {
+        const audio = document.querySelector('audio');
+        audio.play();
+    });
     </script>
 </body>
 </html>
