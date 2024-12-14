@@ -13,10 +13,12 @@ body {
     border: 10px solid lightgreen;
     background-color: lightcyan;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #board img {
-    height: 140px;
-    width: 140px;
+    height: 138px;
+    width: 138px;
     border:1px solid black;
 }
