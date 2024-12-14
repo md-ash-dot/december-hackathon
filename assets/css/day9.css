@@ -11,6 +11,11 @@ body {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
 }
 
 a.homebutton {
@@ -170,3 +175,124 @@ a.homebutton {
     padding-left: 10px;
   }
 }
+
+/* ---------- DAY TWELVE ---------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+ }
+ 
+ /*Opening modal screen*/
+ 
+ .modal {
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgb(225, 224, 231);
+     background-image: url("../images/colourchem.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ .modal-content {
+     background-color: rgb(225, 224, 231);
+     margin: 15% auto;
+     padding: 10px;
+     border: 1px solid #888;
+     width: 70%;
+     text-align: center;
+ }
+ 
+ .close {
+     color: #aaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ /*Main game*/
+ 
+ .container {
+ display: flex;
+ max-width: 80%;
+ max-height: 50%;
+ background-color: rgba(225, 224, 231, 0.9);
+ border-radius: 5px;
+ padding: 10px;
+ justify-content: center;
+ flex-direction: column;
+ margin: auto;
+ text-align: center;
+ }
+ 
+ .btn-grid {
+     display: grid;
+     grid-template-columns: repeat(1, auto);
+     gap: 10px;
+     margin: 20px 0;
+ }
+ 
+ .btn {
+     border-radius: 5px;
+     padding: 5px 10px;
+     outline: none;
+ }
+ 
+ .btn:hover {
+     border-color: royalblue;
+ }
+ 
+ .btn.correct {
+     background-color: rgb(2, 204, 92);
+ }
+ 
+ .btn.wrong {
+     background-color: red;
+ }
+ 
+ .start-btn {
+     font-size: 3rem;
+     font-weight: bold;
+     padding: 10px 20px;
+ }
+ 
+ .controls {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .hide {
+     display: none;
+ }
+ 
+ /*Media query: (700px and above) */
+ 
+ @media screen and (min-width: 700px) {
+ .container {
+         width: 800px;
+         max-width: 70%;
+     }
+ 
+     .modal-content {
+         padding: 20px;
+         width: 30%;
+     }
+ 
+     .btn-grid {
+         display: grid;
+         grid-template-columns: repeat(2, auto);
+     }
+ }
