@@ -160,3 +160,16 @@ body{
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
+
+.chain {
+      fill: none;
+      stroke: #0c18c2;
+      stroke-width: 2;
+      stroke-dasharray: 4 1 2; /* Dashed line for chain effect */
+    }
+.chain2 {
+      fill: none;
+      stroke: #faf9f9;
+      stroke-width: 2;
+      stroke-dasharray: 6 5 2; /* Dashed line for chain effect */
+    }
