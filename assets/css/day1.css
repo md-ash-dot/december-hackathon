@@ -1,0 +1,176 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: radial-gradient(circle at 50% 55%, hsl(241, 44%, 50%), hsl(297, 32%, 89%), hsl(246, 57%, 41%));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#tree{
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#canvas{
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+}
+.gold-lt{
+    fill: #c1881c;
+    -webkit-animation: 0.6s gold-lt-flash ease-in-out infinite;
+    animation: 0.6s gold-lt-flash ease-in-out infinite;
+}
+@-webkit-keyframes gold-lt-flash{
+    40%{
+        fill: #e7b75c;
+    }
+    80%{
+        fill: #c1881c;
+    }
+}
+@keyframes gold-lt-flash{
+    40%{
+        fill: #e7b75c;
+    }
+    80%{
+        fill: #c1881c;
+    }
+}
+.red{
+    fill: #da0c35;
+    -webkit-animation: 0.6s red-flash ease-in-out infinite;
+    animation: 0.6s red-flash ease-in-out infinite;
+}
+@-webkit-keyframes red-flash{
+    40%{
+        fill: #eb7b91;
+    }
+    80%{
+        fill: #aa1231;
+    }
+}
+@keyframes red-flash{
+    40%{
+        fill: #ea385c;
+    }
+    80%{
+        fill: #aa1231;
+    }
+}
+
+.blue-lt{
+    fill: #5292b5;
+    -webkit-animation: 0.6s blue-lt-flash ease-in-out infinite;
+    animation: 0.6s blue-lt-flash ease-in-out infinite;
+}
+@-webkit-keyframes blue-lt-flash{
+    40%{
+        fill: #1721af;
+    }
+    80%{
+        fill: #6350a3;
+    }
+}
+@keyframes blue-lt-flash{
+    40%{
+        fill: #076ae4;
+    }
+    80%{
+        fill: #18c8e7;
+    }
+}
+.blue-dk{
+    fill: #0f1f2f;
+    -webkit-animation: 0.6s blue-dk-flash ease-in-out infinite;
+    animation: 0.6s blue-dk-flash ease-in-out infinite;
+}
+@-webkit-keyframes blue-dk-flash{
+    40%{
+        fill: #28527c;
+    }
+    80%{
+        fill: #0f1f2f;
+    }
+}
+@keyframes blue-dk-flash{
+    40%{
+        fill: #28527c;
+    }
+    80%{
+        fill: #0f1f2f;
+    }
+}
+.gold-dk{
+    fill: #69512a;
+    -webkit-animation: 0.6s gold-dk-flash ease-in-out infinite;
+    animation: 0.6s gold-dk-flash ease-in-out infinite;
+}
+@-webkit-keyframes gold-dk-flash{
+    40%{
+        fill: #b28947;
+    }
+    80%{
+        fill: #69512a;
+    }
+}
+@keyframes gold-dk-flash{
+    40%{
+        fill: #b28947;
+    }
+    80%{
+        fill: #69512a;
+    }
+}
+
+.pink-dk{
+    fill: #cd40b1;
+    -webkit-animation: 0.6s gold-dk-flash ease-in-out infinite;
+    animation: 0.6s gold-dk-flash ease-in-out infinite;
+}
+@-webkit-keyframes gold-dk-flash{
+    40%{
+        fill: #e883cd;
+    }
+    80%{
+        fill: #ac10b4;
+    }
+}
+@keyframes gold-dk-flash{
+    40%{
+        fill: #e883cd;
+    }
+    80%{
+        fill: #ac10b4;
+    }
+}
+.g1{
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.g2{
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.g3{
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.chain {
+      fill: none;
+      stroke: #0c18c2;
+      stroke-width: 2;
+      stroke-dasharray: 4 1 2; /* Dashed line for chain effect */
+    }
+.chain2 {
+      fill: none;
+      stroke: #faf9f9;
+      stroke-width: 2;
+      stroke-dasharray: 6 5 2; /* Dashed line for chain effect */
+    }

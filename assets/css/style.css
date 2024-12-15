@@ -1,0 +1,174 @@
+
+
+/* ---------- DAY NINE ---------- */
+/* ---------- piano ---------- */
+
+.piano-container {
+    margin: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    max-width: 450px;
+  }
+  
+  .white-keys-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .black-keys-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 4%;
+  }
+  
+  .key {
+    flex-basis: 25rem;
+    height: 15rem;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 2px 2px 10px 0px #ccc;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  /* questions*/
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+    background-color: white;
+  }
+  
+  .piano-questions,
+  #tunes {
+    display: flex;
+    margin-left: 6%;
+    font-size: 20px;
+  }
+  
+  .piano-answers,
+  #tunes-2.dropdown {
+    margin: 6%;
+    font-size: 20px;
+    min-width: 300px;
+  }
+  
+  .white-key {
+    border: 3px solid #010425;
+    background-color: #fff;
+    transition: 0, 2s all;
+  }
+  
+  .empty-key {
+    background: rgb(0, 0, 0, 0);
+    z-index: -10;
+    height: 10rem;
+    top: 20px;
+    transition: 0.2s all;
+    margin: 0 10px;
+    box-shadow: 0px 0px 0px 0px #ccc;
+  }
+  .black-key {
+    background: rgb(36, 32, 30);
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(36, 32, 30, 1) 26%,
+      rgba(79, 82, 71, 1) 86%
+    );
+    height: 10rem;
+    top: 20px;
+    transition: 0.2s all;
+    margin: 0 10px;
+  }
+  
+  .piano-quiz {
+    margin: 0 20% 0 20%;
+    font-weight: 400;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+  }
+
+
+
+/* ------------  Home page flip cards ------------ */
+
+
+/* Card Container 3D perspective */
+.card-container {
+  perspective: 1000px;
+}
+
+/* Card base style */
+
+.card {
+  width: 180px;
+  height: 230px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Hover effect to trigger flip */
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* Front and back sides of card */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Front side */
+.card-front {
+  background-color: #68c770;
+}
+
+/* Back side */
+.card-back {
+  background-color: rgb(66, 172, 71);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Home page background image */
+.home-page {
+  background-image: url('/assets/image/mansionhouse.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 140px;
+    height: 190px
+  }
+}
