@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="assets/css/hangman.css">
 </head>
 <body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="assets/hangman-images/lost.gif" alt="crying gif">
+            <h4>Game Over</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
     <div class="container">
         <div class="hangman-box">
             <img src="assets/hangman-images/1.svg" alt="empty hangman, with a christmas tree and stockings">
@@ -16,7 +24,7 @@
             <ul class="word-display">
                 <li class="letter"></li>
                 <li class="letter"></li>
-                <li class="letter">a</li>
+                <li class="letter guessed">a</li>
                 <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
@@ -30,8 +38,26 @@
                 Incorrect guesses:
                 <b>0/6</b>
             </h4>
-            <div class="keyboard">
-                <button>a</button>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/javascript/word-list.js" defer></script> 
+    <script src="assets/javascript/hangman.js" defer></script> 
+    <!--defer makes it load the JS in parallel to DOM-->
+</body>
+</html>
+
+
+<!--Credits for images 
+https://www.cleanpng.com
+https://www.citypng.com/png-download/29819
+https://creazilla.com/media/clipart/38206/santa-claus-hat
+
+<button>a</button>
                 <button>b</button>
                 <button>c</button>
                 <button>d</button>
@@ -57,20 +83,6 @@
                 <button>x</button>
                 <button>y</button>
                 <button>z</button>
-            </div>
-        </div>
-    </div>
 
-
-
-    <script src="assets/javascript/script.js"></script>
-</body>
-</html>
-
-
-<!--Credits for images 
-https://www.cleanpng.com
-https://www.citypng.com/png-download/29819
-https://creazilla.com/media/clipart/38206/santa-claus-hat
 
 -->
