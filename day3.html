@@ -20,17 +20,34 @@
             top: 0;
             border-radius: 50%;
             background: whitesmoke;
-            animation: snowEffect 10s ease-in-out infinite;
+            animation: snowEffectV ease-in infinite, snowEffectH ease-in-out infinite;
         }
-        @keyframes snowEffect {
+        @keyframes snowEffectV {
             0% {
-                transform: translateY(0) translateX(0);
+                top: -40px;
+                opacity: 0;
+            }
+
+            50% {
                 opacity: 1;
             }
 
             100% {
-                transform: translateY(100vh) translateX(-20px);
+                top: 101vh;
                 opacity: 0;
+            }
+        }
+@keyframes snowEffectH {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(-20px);
+            }
+
+            100% {
+                transform: translateX(20px);
             }
         }
         img {
