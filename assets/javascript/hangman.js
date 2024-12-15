@@ -8,6 +8,13 @@ const playAgainBtn = document.querySelector(".play-again");
 let currentWord, correctLetters =[], wrongGuessCount = 0 
 const maxGuesses = 6
 
+const resetGame = () => {
+    correctLetters = [];
+    wrongGuessCount = 0;
+    wordDisplay.innerHTML = word.split("").map(()=> `<li class="letter"></li>`).join("");
+    gameModal.classList.remove("show");
+}
+
 const getRandomWord = () => {
     //selects a random word and hint from the word list
     const {word,hint} = wordList[Math.floor(Math.random()*wordList.length)];
@@ -15,7 +22,6 @@ const getRandomWord = () => {
     console.log(word);
     document.querySelector(".hint-text").innerText = hint; 
     resetGame();
-    wordDisplay.innerHTML = word.split("").map(()=> `<li class="letter"></li>`).join("");
 }
 
 const gameOver = (isVictory) => {
