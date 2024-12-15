@@ -54,7 +54,7 @@ const initGame=(button, clickedLetter) => {
         wrongGuessCount++;
         hangmanImage.src = `assets/images/hangman-images/hangman-${wrongGuessCount}.svg`;     
     }
-    button.disabled - true;
+    button.disabled = true;
     guessesText.innerText=`${wrongGuessCount}/${maxGuesses}`;
 
     //Calling gameOver function max guesses reached 
