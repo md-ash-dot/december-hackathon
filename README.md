@@ -4,19 +4,22 @@
 
 ## **🎄 Hack the Holidays: december-hackathon**  
 
-### **Deployment**  
-(Please note: Your team must also include the deployed links in the usual submission in Hackapp.)  
+### **Deployment**   
 The project is deployed and can be accessed at:  
-**http://your-deployed-link.com**  
+[https://md-ash-dot.github.io/december-hackathon/](https://md-ash-dot.github.io/december-hackathon/)
 
 ---
 
 ### **Criteria**  
 In this section, we will briefly discuss how our team addressed the applicable criteria:  
 - 🎁 **The project fits the theme of celebrating the holidays.**  
-- 🎁 **The project is well planned and executed (Using GitHub Projects/Kanban).**  
-- 🎁 **The project has a basic README that follows the provided template.**  
+
+- 🎁 **The project is well planned and executed (Using GitHub Projects/Kanban).** 
+
+- 🎁 **The project has a basic README that follows the provided template.** 
+
 - 🎁 **The project has an overall sense of completeness.**  
+
 - 🎁 **The project showcases a strong sense of creativity and originality.**  
 
 ---
@@ -40,23 +43,16 @@ The **Goal** section provides a concise summary of the main objective or purpose
 ---
 
 ## **💻 Tech Stack**  
-In the **Tech** section, we provide information about the technology stack, dependencies, and any technical details related to the project.  
-For example:  
-- Frontend: HTML, CSS, JavaScript  
-- Backend: Python, Flask  
-- Database: PostgreSQL  
-- Version Control: Git & GitHub  
-- Deployment: [Insert Deployment Platform, e.g., Heroku, Netlify, etc.]  
+- HTML
+- CSS
+- JavaScript 
+- Bootstrap 
 
 ---
 
 ## **🌟 Credits**  
-In the **Credits** section, we acknowledge the resources, tools, or inspirations used in this project, such as:  
-- Any tutorials or articles referenced  
-- Any open-source libraries or frameworks  
-- Any special mentions for contributors, teammates, or mentors  
+- [Leonardo AI](https://leonardo.ai/) was used to generate background images. 
+- [This tutorial](https://www.youtube.com/watch?v=b-whBuOXgaU) was used to create the playable keyboard.
+- [Emma Lamont's PP2](https://github.com/elamont174/chem-quiz) was used for the quiz on day 12. 
 
 ---
-
-
-change
