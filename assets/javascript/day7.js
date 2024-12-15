@@ -26,7 +26,7 @@ function createBoard() {
 
             let tile = document.createElement("img"); // create an image tag
             tile.id = r.toString() + "-" + c.toString(); // create id for tile with row and column
-            tile.src = "/assets/puzzle-images/" + imageOrder.shift() + ".jpg" // run through the image files
+            tile.src = "assets/puzzle-images/" + imageOrder.shift() + ".jpg" // run through the image files
 
             // Moving tiles
             tile.addEventListener("dragstart", dragStart); // click on tile to drag
