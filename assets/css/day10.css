@@ -113,7 +113,7 @@ body {
 }
 
 :where(.game-modal, .keyboard) button:hover {
-    background: #8286c9;
+    background:#89CFF0;
 }
 
 .game-modal {
@@ -186,5 +186,4 @@ body {
         display: none;
     }
 }
-
 
