@@ -10,6 +10,23 @@ body{
     background-attachment: fixed;
   }
   
+  a.homebutton {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: -5px;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
   #app {
     width: auto;
     margin: 5px 4px;
