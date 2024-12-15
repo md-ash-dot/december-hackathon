@@ -2,8 +2,10 @@ const hangmanImage = document.querySelector(".hangman-box img");
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
 const keyboardDiv = document.querySelector(".keyboard");
+const gameModal = document.querySelector(".game-modal");
+const playAgainBtn = document.querySelector(".play-again");
 
-let currentWord, wrongGuessCount = 0 
+let currentWord, correctLetters =[], wrongGuessCount = 0 
 const maxGuesses = 6
 
 const getRandomWord = () => {
@@ -12,7 +14,18 @@ const getRandomWord = () => {
     currentWord = word
     console.log(word);
     document.querySelector(".hint-text").innerText = hint; 
+    resetGame();
     wordDisplay.innerHTML = word.split("").map(()=> `<li class="letter"></li>`).join("");
+}
+
+const gameOver = (isVictory) => {
+    setTimeout(()=>{
+        const modalText = isVictory ? `You guessed the correct word` : `The correct word was: `
+        gameModal.querySelector("img").src = `assets/images/hangman-images/${isVictory ? 'victory' : 'lost'}.gif`
+        gameModal.querySelector("h4").innerText = `${isVictory ? 'Congrats!' : 'Game over!'}`
+        gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`
+        gameModal.classList.add("show");
+    },300)
 }
 
 const initGame=(button, clickedLetter) => {
@@ -21,6 +34,7 @@ const initGame=(button, clickedLetter) => {
         //Showing correct letters on the word display
         [...currentWord].forEach((letter,index) => {
             if(letter===clickedLetter) {
+                correctLetters.push(letter);
                 wordDisplay.querySelectorAll("li")[index].innerText = letter;
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
             }
@@ -28,9 +42,14 @@ const initGame=(button, clickedLetter) => {
     } else {
         //if clicked letter doesn't exist then update the wrongGuessedCount and hangman image 
         wrongGuessCount++;
-        hangmanImage.src = `assets/images/hangman-images/hangman-${wrongGuessCount}.svg`     
+        hangmanImage.src = `assets/images/hangman-images/hangman-${wrongGuessCount}.svg`;     
     }
+    button.disabled - true;
     guessesText.innerText=`${wrongGuessCount}/${maxGuesses}`;
+
+    //Calling gameOver function max guesses reached 
+    if(wrongGuessCount ===  maxGuesses) return gameOver(false)
+    if(correctLetters.length ===  currentWord.length ) return gameOver(true)
 }
 //Creating keyboard dynamically
 for (let i = 97; i <= 122;i++) {
@@ -41,3 +60,4 @@ for (let i = 97; i <= 122;i++) {
 }
 
 getRandomWord()
+playAgainBtn.addEventListener("click",getRandomWord);
