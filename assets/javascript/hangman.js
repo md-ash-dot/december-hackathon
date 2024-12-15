@@ -9,13 +9,13 @@ const maxGuesses = 6
 const getRandomWord = () => {
     //selects a random word and hint from the word list
     const {word,hint} = wordList[Math.floor(Math.random()*wordList.length)];
-    currentWord = Word
+    currentWord = word
     console.log(word);
     document.querySelector(".hint-text").innerText = hint; 
     wordDisplay.innerHTML = word.split("").map(()=> `<li class="letter"></li>`).join("");
 }
 
-const intGame=(button, clickedLetter) => {
+const initGame=(button, clickedLetter) => {
     //Checking if clickedLetter exists in currentWord
     if(currentWord.includes(clickedLetter)) {
         //Showing correct letters on the word display
@@ -37,7 +37,7 @@ for (let i = 97; i <= 122;i++) {
     const button =document.createElement("button");
     button.innerText=String.fromCharCode(i)
     keyboardDiv.appendChild(button);
-    button.addEventListener("click", e => intGame (e.target, String.fromCharCode(i)));
+    button.addEventListener("click", e => initGame (e.target, String.fromCharCode(i)));
 }
 
 getRandomWord()
