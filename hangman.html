@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="assets/css/hangman.css">
 </head>
 <body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="assets/hangman-images/lost.gif" alt="crying gif">
+            <h4>Game Over</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
     <div class="container">
         <div class="hangman-box">
             <img src="assets/hangman-images/1.svg" alt="empty hangman, with a christmas tree and stockings">
@@ -16,7 +24,7 @@
             <ul class="word-display">
                 <li class="letter"></li>
                 <li class="letter"></li>
-                <li class="letter">a</li>
+                <li class="letter guessed">a</li>
                 <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
