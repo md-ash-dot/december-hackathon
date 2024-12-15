@@ -1,0 +1,23 @@
+.home-page {
+    background-image: url('/assets/images/santa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.home-page h1  {
+    font-size: 40px;
+    color: #0ec545;
+    margin: 10px 0;
+    font-weight: bold;
+    
+}
+
+p {
+    font-size: 28px;
+    color: #0ec545;
+    font-weight: bold;
+}
