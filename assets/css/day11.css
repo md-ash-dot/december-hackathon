@@ -8,8 +8,11 @@ html {
 body,
 html {
     overflow-x: hidden;
-    width: 100vw;
-    height: auto;
+    height: 100%;
+    background-image: url("https://res.cloudinary.com/diuh4hxhw/image/upload/v1734298632/Leonardo_Phoenix_A_serene_snowcovered_landscape_illuminated_by_3_lpagdu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a.homebutton {
