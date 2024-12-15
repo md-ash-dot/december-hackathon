@@ -1,19 +1,26 @@
 body {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: green;
+    color: crimson;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-image: url("/assets/puzzle-images/puzzlebg4.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 #title {
     height: 100px;
     width: 400px;
+    margin: 40px 0 20px;
 }
 
 #board {
     height: 420px;
     width: 420px;
-    border: 10px solid lightgreen;
-    background-color: lightcyan;
+    border: 8px solid darkgreen;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -23,4 +30,46 @@ body {
     height: 138px;
     width: 138px;
     border:1px solid black;
+}
+
+a.homebutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  a.homebutton:hover {
+    background-color: crimson;
+    transform: scale(1.1); 
+    color: white;
+    cursor: pointer;
+}
+
+#restartButton {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#restartButton:hover {
+    background-color: limegreen;
+    transform: scale(1.1);
+    cursor: pointer;
 }
