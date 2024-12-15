@@ -9,15 +9,19 @@
 }
 
 .home-page h1  {
-    font-size: 40px;
-    color: #0ec545;
-    margin: 10px 0;
+    font-size: 80px;
+    color: #b91313fb;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 30px;
     font-weight: bold;
+    background-color: rgba(225, 226, 228, 0.425);
     
 }
 
 p {
-    font-size: 28px;
-    color: #0ec545;
+    font-size: 55px;
+    color: #a31212fb;
     font-weight: bold;
+    background-color: rgba(225, 226, 228, 0.425);
 }
