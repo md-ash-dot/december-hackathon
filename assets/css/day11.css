@@ -36,6 +36,7 @@ a.homebutton:hover {
     background-color: crimson;
     transform: scale(1.1);
     cursor: pointer;
+
 }
 .snow-container {
     position: fixed;

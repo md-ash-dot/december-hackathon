@@ -27,7 +27,6 @@
     text-align: center;
     display: inline-block;
 }
-
     a.homebutton:hover {
         background-color: crimson;
         transform: scale(1.1);

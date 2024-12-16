@@ -48,6 +48,7 @@ a.homebutton:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 .container {
   width: 850px;
   background: #fff;
