@@ -2,11 +2,10 @@ body{
     overflow: hidden;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    background-image: url("/assets/images/day4/background.png");
-=======
+
+
     background-image: url("../images/day4/background.png");
->>>>>>> 218e91ad728d0ee12472d0fe9483b1876872edea
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -15,24 +14,29 @@ body{
   }
   
   a.homebutton {
-    background-color: darkgreen;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+
     border: none;
     color: white;
-    padding: 3px 5px;
-    text-align: center;
-    text-decoration: none;
-    /* display: inline-block; */
+    padding: 5px 10px;
     font-size: 16px;
-    margin-left: 0;
-    margin-top: -5px;
-    font-family: "Merienda", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-button:hover {
-    background-color: limegreen;
+
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+a.homebutton:hover {
+    background-color: crimson;
     transform: scale(1.1);
+    cursor: pointer;
+
 }
   #app {
     width: auto;
