@@ -8,7 +8,7 @@ let score = 0
 let timeLeft = 15
 let gameRunning = false
 
-const sound = new Audio("../images/day8/smash.mp3")
+const sound = new Audio("assets/images/day8/smash.mp3")
 
 function startCountdown() {
     timerEl.textContent = timeLeft
@@ -37,13 +37,13 @@ function run() {
 
     const img = document.createElement('img')
     img.classList.add('grinch')
-    img.src = ('../images/day8/grinch.png')
+    img.src = 'assets/images/day8/grinch.png'
 
     img.addEventListener('click', () => {
         score += 10
         sound.play()
         scoreEl.textContent = score
-        img.src = ('../images/day8/grinch-whacked.png')
+        img.src = 'assets/images/day8/grinch-whacked.png'
         clearTimeout(timer)
         setTimeout(() => {
             hole.removeChild(img)
