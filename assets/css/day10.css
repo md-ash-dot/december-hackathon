@@ -20,6 +20,7 @@ body {
 }
 
 a.homebutton {
+
     position: absolute;
     top: 10px;
     left: 10px;
@@ -39,6 +40,7 @@ a.homebutton:hover {
     background-color: crimson;
     transform: scale(1.1);
     cursor: pointer;
+
 }
 .container {
     width: 850px;
