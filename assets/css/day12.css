@@ -13,25 +13,27 @@
    }
    
    a.homebutton {
-    background-color: darkred;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
     border: none;
     color: white;
-    padding: 3px 5px;
-    text-align: center;
-    text-decoration: none;
-    flex-flow: column;
+    padding: 5px 10px;
     font-size: 16px;
-    margin-left: 0;
-    margin-top: -5px;
-    font-family: "Merienda", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    text-align: center;
     position: fixed;
     left: 0;
-    top: 0;
-  }
-   
+}
+    a.homebutton:hover {
+        background-color: crimson;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
    body {
        padding: 0;
        margin: 0;
