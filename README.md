@@ -1,62 +1,138 @@
 
-# 🎅✨ Hack the Holidays! 🎄🎁  
+# 🎅✨ Baby, It's Code Outside! 🎄🎁  
 
 
 ## **🎄 Hack the Holidays: december-hackathon**  
 
 ### **Deployment**  
-(Please note: Your team must also include the deployed links in the usual submission in Hackapp.)  
-The project is deployed and can be accessed at:  
-**http://your-deployed-link.com**  
+
+[Click here to play!]**https://md-ash-dot.github.io/december-hackathon/**  
 
 ---
 
-### **Criteria**  
-In this section, we will briefly discuss how our team addressed the applicable criteria:  
-- 🎁 **The project fits the theme of celebrating the holidays.**  
-- 🎁 **The project is well planned and executed (Using GitHub Projects/Kanban).**  
-- 🎁 **The project has a basic README that follows the provided template.**  
-- 🎁 **The project has an overall sense of completeness.**  
-- 🎁 **The project showcases a strong sense of creativity and originality.**  
+### **Criteria**    
+- 🎁
+- 🎁  
+- 🎁 
+- 🎁 
+- 🎁  
 
 ---
 
-## **🎅 About the Submission**  
+## **🎅## TABLE OF CONTENTS
+| Section |
+| --- |
+| [Project description, link, etc.](#baby-its-code-outside) |
+| [Controls and Game Rules](#controls-and-game-rules) |
+| [Typography](#typography) |
+| [Features](#features) |
+| [UX / UI](#uxui-section) |
+| [Testing](#testing) |
+| [Unfixed Bugs](#unfixed-bugs) |
+| [Deployment](#deployment) |
+| [Citation of sources](#citation-of-sources) |
+| [Future Features](#future-features) | 
 
-### **Intro**  
-One or two paragraphs providing an overview of our project.  
-This could include how our project embodies the **Hack the Holidays** spirit and what makes it unique.  
-
----
-
-### **Goal**  
-The **Goal** section provides a concise summary of the main objective or purpose of the project described in this README. It addresses the following aspects:  
-
-- 🎄 **Problem Statement:** A brief description of the holiday-related issue or gap our project aims to address.  
-- 🎄 **Objective(s):** What does our project set out to achieve?  
-- 🎄 **Target Audience:** Who will benefit from this project?  
-- 🎄 **Benefits:** How will this project make the holidays brighter, more inclusive, or more joyful?  
-
----
-
-## **💻 Tech Stack**  
-In the **Tech** section, we provide information about the technology stack, dependencies, and any technical details related to the project.  
-For example:  
-- Frontend: HTML, CSS, JavaScript  
-- Backend: Python, Flask  
-- Database: PostgreSQL  
-- Version Control: Git & GitHub  
-- Deployment: [Insert Deployment Platform, e.g., Heroku, Netlify, etc.]  
 
 ---
 
-## **🌟 Credits**  
-In the **Credits** section, we acknowledge the resources, tools, or inspirations used in this project, such as:  
-- Any tutorials or articles referenced  
-- Any open-source libraries or frameworks  
-- Any special mentions for contributors, teammates, or mentors  
+## CONTROLS AND GAME RULES
+### How to play
+
+- 🎄 
+- 🎄  
+- 🎄  
+- 🎄   
 
 ---
 
 
-change
+
+---
+
+## **🌟 FEATURES**  
+
+- Header 
+    - Contains the navigation links to change from page to page.
+- Team page
+    - 
+- Buttons
+    - 
+- Gameplay
+    - All mini games will be different and fun, while also relating to christmas theme
+- How to play
+    - Instructions to help users understand what they must do in order to complete the game
+
+---
+
+
+
+## **🎄TYPOGRAPHY**
+- 
+- 
+- 
+
+
+
+
+## **🎅✨UX/UI SECTION** 
+### Project Goals and Desgin choices:
+
+
+### **🌟 USER STORIES:**
+- As a new user:  
+    - I want to click on the logo and be taken to the home page.
+    - I want to click how to play and be provided with instructions on how I play this game.
+    - I want to click on each day and be taken to it.
+    - I want to click the linkedin and github links ...
+    - I want the game to be fun
+
+- As a user:
+    - 
+
+### **🎁 WIREFRAMES:**
+| Page | screenshot | Page | screenshot | 
+| --- | --- | --- | --- |
+| Home page | ![wireframe - home](....) | Game page | ![wireframe - game](..) |
+| Team page| ![wireframe - team](...) |     |     |
+
+## **💻 TESTING**  
+[Testing can be found here](/testing.md)
+
+
+## DEPLOYMENT
+The project was developed in Gitpod, committed and push to GitHub through using the terminal section in Gitpod.
+To deploy this page to GitHub pages from its GitHub repository, the following steps were taken:
+1. Log into GitHub
+2. From the list of repositories on the screen, select the relevant repository
+3. From the menu list near the top below the project name, select settings
+4. There will be a nav down the left of the screen. Find pages and select it when found
+5. Select the branch dropdown which will say none and change it to main
+6. Click the save button to the right of it
+
+How to run this project locally:
+1. To clone this project into Gitpod you will need a GitHub account
+2. Use the Chrome browser
+
+Then follow the steps:
+1. Install Gitpod Browser Extensions for Chrome
+2. After installation, restart the browser
+3. Log into Gitpod with your Gitpod account
+4. Navigate to the project GitHub repository
+5. Click the green 'Gitpod' button in the top right corner of the repository
+6. This will trigger a new Gitpod workspace to be created from the code in GitHub where you can work locally
+
+## **🎄CITATION OF SOURCES**
+### Media:
+- 
+
+### Content used in website or to help write code: 
+- [Inspiration for whac-a-maul mini-game]()
+- [Font used ](https://fonts.google.com/specimen/Dosis)
+-
+
+## **🎁FUTURE FEATURES**
+- Add extra rooms
+- Add leaderboards
+- Add mobile and tablet functionality
+- 
