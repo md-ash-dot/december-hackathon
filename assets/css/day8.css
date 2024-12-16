@@ -6,10 +6,9 @@ html, body{
     height: 100%;
 }
 body{
+    background-image: url("../images/day4/background.jpg");;
     font-family: "Merienda", cursive;
-
-    background-image: url("../images/puzzlebg4.jpg");
-
+    background-color: #27b427b4; /* In case backgrund fall */
     background-size: cover;
     background-repeat: no-repeat;
     color: crimson;
@@ -20,10 +19,72 @@ body{
     overflow: hidden;
 }
 
-.score .timer h3{
-    font-size: 2em;
-    margin-bottom: .2em;
+.info {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(76, 175, 79, 0.718);
+    color: white;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin: 5px auto;
+    width: 60%;
+  }
+
+  /* Game Title */
+.game-title {
+    font-family: 'Pacifico', cursive, sans-serif;
+    color: #ff0000; /* Christmas red */
+    text-shadow: 2px 2px 5px #00ff00, 0px 0px 10px white; /* Green and white glow */
+    text-align: center;
+    margin: 5px 0;
+    font-size: 2rem;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 2px 2px 10px #00ff00, 0px 0px 15px white;
+    }
+    100% {
+      text-shadow: 4px 4px 20px #ff0000, 0px 0px 20px #ffcc00;
+    }
+  }  
+
+.score span, .timer span {
+  font-weight: bold;
+  font-size: 2rem;
 }
+
+/* Buttons Section */
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #startGame {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  #startGame:hover {
+    background-color: #1976d2;
+  }
+  
+  #howToPlay {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  #howToPlay:hover {
+    background-color: #e68900;
+  }
+  
 .board{
     height: 600px;
     width: 600px;
@@ -41,7 +102,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-.hole .mole{
+.hole .grinch{
     width: 70%;
     position: absolute;
     left: 50%;
@@ -64,7 +125,7 @@ body{
     position: absolute;
     top: 100px;
     left: 100px;
-    background-image: url('assets/images/day8/hammer.png');
+    background-image: url("../images/day4/hammer.png");;
     background-size: 100% 100%;
     transform: translate(-20%, -20%);
     transition: transform .1s;
@@ -72,43 +133,4 @@ body{
 }
 .cursor.active{
     transform: translate(-20%, -20%) rotate(-45deg);
-}
-
-button {
-    background-color: darkgreen;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-button:hover {
-    background-color: limegreen;
-    transform: scale(1.1);
-}
-
-a.homebutton {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: green;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-}
-
-a.homebutton:hover {
-    background-color: crimson;
-    transform: scale(1.1);
-    cursor: pointer;
 }
