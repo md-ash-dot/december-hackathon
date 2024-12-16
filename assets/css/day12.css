@@ -25,7 +25,8 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
+    position: fixed;
+    left: 0;
 }
     a.homebutton:hover {
         background-color: crimson;
