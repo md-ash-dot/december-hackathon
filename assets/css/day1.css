@@ -12,6 +12,7 @@ a.homebutton {
     text-decoration: none;
     text-align: center;
     display: inline-block;
+     z-index: 100; /* Ensure it’s on top */
 }
 
 a.homebutton:hover {
@@ -47,6 +48,9 @@ body{
     z-index: 2;
     height: 100vh;
     width: 100vw;
+}
+#tree, #canvas {
+    z-index: 1; 
 }
 .gold-lt{
     fill: #c1881c;
@@ -201,3 +205,11 @@ body{
       stroke-width: 2;
       stroke-dasharray: 6 5 2; /* Dashed line for chain effect */
     }
+    @media (max-width: 600px) {
+    a.homebutton {
+        top: 5px;
+        left: 5px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
