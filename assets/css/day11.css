@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding: 0;
     background-color: rgba(20, 20, 25, 1);
+    font-family: "Merienda", cursive;
 }
 
 body,
@@ -16,7 +17,6 @@ html {
 }
 
 a.homebutton {
-
     position: absolute;
     top: 10px;
     left: 10px;

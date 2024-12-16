@@ -1,110 +1,106 @@
-body{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/day4/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-attachment: fixed;
+}
 
-
-    background-image: url("../images/day4/background.png");
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-attachment: fixed;
-  }
-  
-  a.homebutton {
-
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: green;
-
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    font-size: 16px;
-
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
+a.homebutton {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-family: "Merienda", cursive;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 a.homebutton:hover {
-    background-color: crimson;
-    transform: scale(1.1);
-    cursor: pointer;
-
+  background-color: crimson;
+  transform: scale(1.1);
+  cursor: pointer;
 }
-  #app {
-    width: auto;
-    margin: 5px 4px;
-    padding: 6px 5px;
-    margin-top: 2%;
-    display: flex;
-    position: relative;
+
+#app {
+  width: auto;
+  margin: 5px 4px;
+  padding: 6px 5px;
+  margin-top: 2%;
+  display: flex;
+  position: relative;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: sans-serif;
+  margin: 2px 3px;
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 280px;
+  z-index: 2;
+}
+
+.wheel {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+  left: 100px;
+}
+
+.button {
+  display: flex;
+  width: 250px;
+  position: relative;
+  cursor: pointer;
+  left: 150px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.blur {
+  animation: blur 10s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
   }
-  
-  .display {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    font-family: sans-serif;
-    margin: 2px 3px;
-    position: relative;
+  80% {
+    filter: blur(1.5px);
   }
-  
-  .card{
-    width: 100%;
-    height: auto;
-    border: 2px solid ;
-    border-radius: 20px;
+  100% {
+    filter: blur(0px);
   }
-  
-  .marker {
-    position: absolute;
-    width: 60px;
-    left: 280px;
-    z-index: 2;
-  }
-  
-  .wheel {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    position: relative;
-    left: 100px;
-  }
-  
-  .button {
-    display: flex;
-    width: 250px;
-    position: relative;
-    cursor: pointer;
-    left: 150px;
-    margin-top: 10px;
-  }
-  
-  .button:hover {
-    opacity: 0.8;
-  }
-  
-  .blur {
-    animation: blur 10s;
-  }
-  
-  @keyframes blur {
-    0% {
-      filter: blur(1.5px);
-    }
-    80% {
-      filter: blur(1.5px);
-    }
-    100% {
-      filter: blur(0px);
-    }
-  }
-  
+}

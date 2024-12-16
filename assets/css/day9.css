@@ -16,7 +16,6 @@ body {
 }
 
 a.homebutton {
-
     position: absolute;
     top: 10px;
     left: 10px;
@@ -27,12 +26,9 @@ a.homebutton {
     font-size: 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-
-   
     text-decoration: none;
     text-align: center;
     display: inline-block;
-
 }
 
 a.homebutton:hover {
@@ -40,7 +36,6 @@ a.homebutton:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
 
 #dayninehead{
   color: white;

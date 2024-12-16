@@ -16,16 +16,13 @@
     padding-top: 30px;
     font-weight: bold;
     background-color: rgba(225, 226, 228, 0.425);
-    
 }
-
 p {
     font-size: 55px;
     color: #a31212fb;
     font-weight: bold;
     background-color: rgba(225, 226, 228, 0.425);
 }
-
 a.homebutton {
     position: absolute;
     top: 10px;
@@ -41,10 +38,8 @@ a.homebutton {
     text-align: center;
     display: inline-block;
 }
-
 a.homebutton:hover {
     background-color: crimson;
     transform: scale(1.1);
     cursor: pointer;
-
 }
