@@ -5,8 +5,9 @@
 html, body{
     height: 100%;
 }
+
 body{
-    background-image: url("../images/day4/background.png");;
+    background-image: url("../images/day4/background.jpg");
     font-family: "Merienda", cursive;
     background-size: cover;
     background-repeat: no-repeat;
