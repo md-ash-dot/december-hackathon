@@ -20,14 +20,14 @@ body {
 }
 
 a.homebutton {
-    background-color: darkred;
+    background-color: darkgreen;
     border: none;
     color: white;
-    padding: 3px 5px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     flex-flow: column;
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 0;
     margin-top: -5px;
     font-family: "Merienda", cursive;
@@ -37,8 +37,16 @@ a.homebutton {
     position: fixed;
     left: 0;
     top: 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+     border: none;
+    border-radius: 5px;
   }
-
+a.homebutton:hover {
+    background-color: limegreen;
+    transform: scale(1.1);
+}
 .container {
     width: 850px;
     background: #fff;
