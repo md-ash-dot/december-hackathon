@@ -2,7 +2,11 @@ body{
     overflow: hidden;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     background-image: url("/assets/images/day4/background.png");
+=======
+    background-image: url("../images/day4/background.png");
+>>>>>>> 218e91ad728d0ee12472d0fe9483b1876872edea
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
