@@ -24,18 +24,16 @@ a.teambutton, a.homebutton  {
 
 a.teambutton:hover {
   background-color: crimson;
-  transform: scale(1.1); 
+  transform: scale(1.1);
   color: white;
   cursor: pointer;
 }
 
-
 /* ------------  Home page flip cards ------------ */
-
 h1#maintitle {
   color: white;
   text-shadow: 5px 5px 7px #000000;
-  margin: 5% 5% 1% 5%;
+  margin: 15% 5% 1% 5%;
   text-align: center;
   font-size: 60px;
  }
@@ -50,21 +48,21 @@ h1#maintitle {
    /* Navbar styles with dropdown toggle */
 nav {
   position: absolute;
-  background-color: #a1c2ed;
+  background-color: #A1C2ED;
   width: 100%;
   left: 0;
   padding: 0 1rem;
-  box-shadow: 0 2px 2px #ebfafe;
+  box-shadow: 0 2px 2px #EBFAFE;
   display: none; /* set to none so that the Nav bar is hidden until users click to open*/
   top: 100%;
-
 }
 
 nav a {
-  color: #ebfafe;
+  color: #EBFAFE;
   text-decoration: none;
   font-size: 110%;
 }
+
 /* Nav toggle */
 #nav-toggle:checked ~ nav {
   display: block;
@@ -76,14 +74,16 @@ nav a {
 
 .nav-toggle-label {
   font-size: 2rem;
-  color: #ebfafe;
+  color: #EBFAFE;
   margin-right: 0px;
   margin-left: 10px;
     align-content:center;
 }
+
 .card-container {
   perspective: 1000px;
 }
+
 /* Card base style */
 .card {
   width: 180px;
@@ -92,12 +92,13 @@ nav a {
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
+
 /* Hover effect to trigger flip */
 .card-container:hover .card {
   transform: rotateY(180deg);
   opacity: 1;
-
 }
+
 /* Front and back sides of card */
 .card-front,
 .card-back {
@@ -113,6 +114,7 @@ nav a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    opacity: 1;
 }
+
 /* Front side */
 .card-front {
   background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
@@ -125,6 +127,7 @@ nav a {
   border-radius: 8px; /* Matches the card border radius */
    opacity: 0.5;
 }
+
 /* Back side */
 .card-back {
   background-color: rgb(66, 172, 71);
@@ -132,14 +135,16 @@ nav a {
   transform: rotateY(180deg);
    opacity: 0.5;
 }
+
 /* Home page background image */
 body.home-page {
   background-image: url('https://res.cloudinary.com/diuh4hxhw/image/upload/v1734187115/Leonardo_Phoenix_A_serene_and_festive_Christmas_scene_set_in_t_0_vemvlp.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  margin: 0;
 }
+
 @media (max-width: 576px) {
   .card {
     width: 140px;
@@ -147,9 +152,7 @@ body.home-page {
   }
 }
 
-
 /* ----------ABOUT PAGE ----------*/
-
 #about-bg {
   background-image: url("https://res.cloudinary.com/diuh4hxhw/image/upload/v1734268136/elves_vo0ujm.jpg");
   background-repeat: no-repeat;
@@ -224,6 +227,7 @@ p.prof-socials {
 #about {
   height: 100vh;
 }
+
 @media (min-width: 1200px) {
   .display-3 {
     font-size: 4rem;
