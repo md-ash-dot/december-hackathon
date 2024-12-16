@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: 100%;
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -101,7 +101,8 @@ a.homebutton {
 .piano-answers,
 #tunes-2.dropdown {
   margin-left: 6%;
-  margin-top: 1%;
+  margin-top: 2%;
+  margin-bottom: 5%;
   font-size: 23px;
   min-width: 337px;
 }

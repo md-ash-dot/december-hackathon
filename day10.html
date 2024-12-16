@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/favicon_io/site.webmanifest">
+    <title>Christmas Hangman</title>
+    <link rel="stylesheet" href="assets/css/day10.css">
+    <nav><a href="index.html" class="homebutton">Home</a></div></nav>
+</head>
+<body>
+
+    <div class="game-modal">
+        <div class="content">
+            <img src="assets/hangman-images/lost.gif" alt="crying gif">
+            <h4>Game Over</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="assets/images/hangman-images/hangman-0.svg" alt="empty hangman, with a christmas tree and stockings">
+            <h1>Christmas Hangman</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">
+                Hint:
+                <b>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</b>
+            </h4>
+            <h4 class="guesses-text">
+                Incorrect guesses:
+                <b>0/6</b>
+            </h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+
+
+    <script src="assets/javascript/word-list.js" defer></script> 
+    <script src="assets/javascript/hangman.js" defer></script> 
+    <!--defer makes it load the JS in parallel to DOM-->
+</body>
+</html>
+
+
+<!--Credits for images 
+https://www.cleanpng.com
+https://www.citypng.com/png-download/29819
+https://creazilla.com/media/clipart/38206/santa-claus-hat
+--> 
