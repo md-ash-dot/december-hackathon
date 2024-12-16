@@ -5,11 +5,10 @@
 html, body{
     height: 100%;
 }
-body{
 
+body{
     background-image: url("../images/day4/background.jpg");
     font-family: "Merienda", cursive;
-    background-color: #27b427b4; /* In case backgrund fall */
     background-size: cover;
     background-repeat: no-repeat;
     color: crimson;
@@ -126,7 +125,7 @@ button {
     position: absolute;
     top: 100px;
     left: 100px;
-    background-image: url("../images/day4/hammer.png");
+    background-image: url("../images/day8/hammer.png");;
     background-size: 100% 100%;
     transform: translate(-20%, -20%);
     transition: transform .1s;
