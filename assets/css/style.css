@@ -35,7 +35,40 @@ h1#maintitle {
   font-size: 30px;
  }
 
-/* Card Container 3D perspective */
+   /* Navbar styles with dropdown toggle */
+nav {
+  position: absolute;
+  background-color: #a1c2ed;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #ebfafe;
+  display: none; /* set to none so that the Nav bar is hidden until users click to open*/
+  top: 100%;
+
+}
+
+nav a {
+  color: #ebfafe;
+  text-decoration: none;
+  font-size: 110%;
+}
+/* Nav toggle */
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+  color: #ebfafe;
+  margin-right: 0px;
+  margin-left: 10px;
+    align-content:center;
+}
 .card-container {
   perspective: 1000px;
 }
@@ -50,6 +83,8 @@ h1#maintitle {
 /* Hover effect to trigger flip */
 .card-container:hover .card {
   transform: rotateY(180deg);
+  opacity: 1;
+
 }
 /* Front and back sides of card */
 .card-front,
@@ -64,16 +99,26 @@ h1#maintitle {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   opacity: 1;
 }
 /* Front side */
 .card-front {
-  background-color: #68c770;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  color: #333; /* Adjust text color for visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text inside the card */
+  font-size: 1.5rem; /* Adjust font size for visibility */
+  border-radius: 8px; /* Matches the card border radius */
+   opacity: 0.5;
 }
 /* Back side */
 .card-back {
   background-color: rgb(66, 172, 71);
   color: white;
   transform: rotateY(180deg);
+   opacity: 0.5;
 }
 /* Home page background image */
 body.home-page {
