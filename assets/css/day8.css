@@ -6,17 +6,19 @@ html, body{
     height: 100%;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-image: url("../images/day4/background.jpg");;
+    font-family: "Merienda", cursive;
+    background-color: #27b427b4; /* In case backgrund fall */
     background-size: cover;
     background-repeat: no-repeat;
-    color: black;
+    color: crimson;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
+
 .info {
     display: flex;
     justify-content: space-around;
@@ -55,10 +57,6 @@ body{
 }
 
 /* Buttons Section */
-.buttons {
-  margin: 2px 0;
-}
-
 button {
     font-size: 1.2rem;
     padding: 10px 20px;
