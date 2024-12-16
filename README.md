@@ -1,38 +1,29 @@
 
 # 🎅✨ Baby, It's Code Outside! 🎄🎁  
-=======
 
 
-
-## **🎄 Hack the Holidays: december-hackathon**  
+## **🎄 December Hackathon: Hack the Holidays** 
+ ![wireframe - home](/Docs/responsive_720.png)
 
 ### **Deployment**  
 
-[Click here to play!]**https://md-ash-dot.github.io/december-hackathon/**  
+- 🎁The project is deployed [Click here to play!](**https://md-ash-dot.github.io/december-hackathon/**  )
 
 ---
+  
 
-### **Criteria**    
-- 🎁
-- 🎁  
-- 🎁 
-- 🎁 
-- 🎁  
 
----
-
-## **🎅## TABLE OF CONTENTS
+## **🎅 TABLE OF CONTENTS**
 | Section |
 | --- |
 | [Project description, link, etc.](#baby-its-code-outside) |
-| [Controls and Game Rules](#controls-and-game-rules) |
 | [Typography](#typography) |
 | [Features](#features) |
 | [UX / UI](#uxui-section) |
 | [Testing](#testing) |
 | [Unfixed Bugs](#unfixed-bugs) |
 | [Deployment](#deployment) |
-| [Citation of sources](#citation-of-sources) |
+| [Credits](#credits) |
 | [Future Features](#future-features) | 
 
 
@@ -49,28 +40,21 @@
 ---
 
 
-
----
-
 ## **🌟 FEATURES**  
 
-- Header 
+- 🎁 Header 
     - Contains the navigation links to change from page to page.
-- Team page
-    - 
-- Buttons
-    - 
-- Gameplay
-    - All mini games will be different and fun, while also relating to christmas theme
-- How to play
-    - Instructions to help users understand what they must do in order to complete the game
+- 🎁 Team page
+    - This page shows the team of individuals who collaborated together to make this game.
 
-The project is deployed and can be accessed at:  
-[https://md-ash-dot.github.io/december-hackathon/](https://md-ash-dot.github.io/december-hackathon/)
+- 🎁 Gameplay
+    - All mini games will be different and fun, while also relating to christmas theme
+- 🎁 How to play
+    - Instructions to help users understand what they must do in order to complete the game
 
 ---
 
-### **Criteria**
+### **🎄 Criteria**
 
 - 🎁 **The project fits the theme of celebrating the holidays.**  
   The "12 Days of Christmas" is the period in Christian theology that marks the span between the birth of Christ and the coming of the three wise men. It begins on Christmas and runs to the Epiphany (6th January). We have decided to celebrate the "12 Days of Code-mas!"
@@ -112,24 +96,21 @@ When you enter our site, you are greeted with twelve cards: 1 - 12. Behind each 
 
 ## **💻 Tech Stack**
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-
-
----
-
-## **🌟 Credits**
+- JS: the primary language used to develop interactive components of the website.
+- HTML: the markup language used to create the website.
+- CSS: the styling language used to style the website.
+- GitHub: used to host the website's source code.
+- Chrome DevTools: was used to debug the website.
+- Font Awesome: was used to create the icons used on the website.
+- BootStrap: was used to create responsive elements.
+- Canva: was used to generate/ design images and cards
 
 
 
 ## **🎄TYPOGRAPHY**
-- 
-- 
-- 
 
-
+- The font for the website were imported using Google Fonts. The Merienda font has a cursive and slightly whimsical style, which is perfect for creating a fun, informal, and engaging atmosphere—ideal for a surprise calendar website.
+- The background images, images and the emojies were either from google or desigend featruing Christmas theme. 
 
 
 ## **🎅✨UX/UI SECTION** 
@@ -137,27 +118,29 @@ When you enter our site, you are greeted with twelve cards: 1 - 12. Behind each 
 
 
 ### **🌟 USER STORIES:**
-- As a new user:  
-    - I want to click on the logo and be taken to the home page.
-    - I want to click how to play and be provided with instructions on how I play this game.
-    - I want to click on each day and be taken to it.
-    - I want to click the linkedin and github links ...
-    - I want the game to be fun
+- As a curious user, I want to click on a calendar box and unlock a surprise (e.g., a game, song, or message), so that I can experience excitement and fun daily.
+- As a music lover, I want some calendar surprises to feature songs, playlists, or musical snippets, so I can discover new music or enjoy a favorite tune.
+- As a gamer, I want some surprises to unlock fun mini-games that I can play instantly, so I can take a quick break and relax.
+- As a knowledge seeker, I want some surprises to reveal trivia, puzzles, or fun facts, so I can learn something new while engaging with the calendar.
+- As a returning user, I want the surprises to vary every day, so the experience remains fresh and exciting for me over time.
 
-- As a user:
-    - 
 
 ### **🎁 WIREFRAMES:**
 | Page | screenshot | Page | screenshot | 
 | --- | --- | --- | --- |
-| Home page | ![wireframe - home](....) | Game page | ![wireframe - game](..) |
+| Home page | ![wireframe - home](/Docs/desktop.png) | mobile  | ![wireframe - mobile](/Docs/mobile.png) |
 | Team page| ![wireframe - team](...) |     |     |
 
 ## **💻 TESTING**  
 [Testing can be found here](/testing.md)
 
 
-## DEPLOYMENT
+
+## **🌟 Unfixed Bugs**
+- Day 4 html file is not responsive.
+
+
+## ** 💻DEPLOYMENT**
 The project was developed in Gitpod, committed and push to GitHub through using the terminal section in Gitpod.
 To deploy this page to GitHub pages from its GitHub repository, the following steps were taken:
 1. Log into GitHub
@@ -179,17 +162,30 @@ Then follow the steps:
 5. Click the green 'Gitpod' button in the top right corner of the repository
 6. This will trigger a new Gitpod workspace to be created from the code in GitHub where you can work locally
 
-## **🎄CITATION OF SOURCES**
+## **🎄Credits**
 ### Media:
-- 
+- [Inspiration for whack-grinch mini game for day 8](https://www.youtube.com/watch?v=b20YueeXwZg)
+- [Inspiration for spin the wheel mini game for day 4](https://www.youtube.com/watch?v=F3-lK_-PQr0)
+- [inspiration for the text animation for day 2](https://www.youtube.com/watch?v=asv8uirb2R8)
+- day 10
+https://www.cleanpng.com
+https://www.citypng.com/png-download/29819
+https://creazilla.com/media/clipart/38206/santa-claus-hat (edited) 
+- day 11 animation:
+https://www.perssondennis.com/articles/33-christmas-animations-to-easily-add-to-your-website
 
-### Content used in website or to help write code: 
-- [Inspiration for whac-a-maul mini-game]()
-- [Font used ](https://fonts.google.com/specimen/Dosis)
--
+- Audio files day 1 & 3
+https://pixabay.com/music/search/programming/
+- Ai generated images day 3
+https://deepai.org/machine-learning-model/cute-creature-generator
+- Youtube tutorials
+How to Create a Snow Effect Animation with CSS and JS
+https://www.youtube.com/watch?v=J7YiXf8gvDo&t=670s
+- Animated Christmas Tree using HTML & CSS
+https://www.youtube.com/watch?v=Dg0WMIiW3Yk&t=294s
 
+---
 ## **🎁FUTURE FEATURES**
 - Add extra rooms
 - Add leaderboards
-- Add mobile and tablet functionality
-- 
+- Add mobile and tablet functionality. 
