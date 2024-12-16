@@ -16,17 +16,23 @@ body {
 }
 
 a.homebutton {
-    background-color: darkred;
+    background-color: darkgreen;
     border: none;
     color: white;
-    padding: 3px 5px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
   }
-
+a.homebutton:hover {
+    background-color: limegreen;
+    transform: scale(1.1);
+}
 #dayninehead{
   color: white;
   text-shadow: 5px 5px 7px #000000;
