@@ -164,7 +164,27 @@ Then follow the steps:
 
 ## **🎄Credits**
 ### Media:
+- [Inspiration for whack-grinch mini game for day 8](https://www.youtube.com/watch?v=b20YueeXwZg)
+- [Inspiration for spin the wheel mini game for day 4](https://www.youtube.com/watch?v=F3-lK_-PQr0)
+- [inspiration for the text animation for day 2](https://www.youtube.com/watch?v=asv8uirb2R8)
+- day 10
+https://www.cleanpng.com
+https://www.citypng.com/png-download/29819
+https://creazilla.com/media/clipart/38206/santa-claus-hat (edited) 
+- day 11 animation:
+https://www.perssondennis.com/articles/33-christmas-animations-to-easily-add-to-your-website
 
+- Audio files day 1 & 3
+https://pixabay.com/music/search/programming/
+- Ai generated images day 3
+https://deepai.org/machine-learning-model/cute-creature-generator
+- Youtube tutorials
+How to Create a Snow Effect Animation with CSS and JS
+https://www.youtube.com/watch?v=J7YiXf8gvDo&t=670s
+- Animated Christmas Tree using HTML & CSS
+https://www.youtube.com/watch?v=Dg0WMIiW3Yk&t=294s
+
+---
 ## **🎁FUTURE FEATURES**
 - Add extra rooms
 - Add leaderboards
